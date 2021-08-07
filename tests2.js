@@ -4,7 +4,7 @@ var libraw = require('./libraw');
 const request = require('request')
 
 let url = 'https://content.protriathletes.org/media/content/test/032ea20c-57db-425e-9df3-f0e4b4eeee12.NEF'
-url = 'https://content.protriathletes.org/media/content/test/1e56cbf7-a17d-4736-8b66-a2d80049791f.NEF'
+//url = 'https://content.protriathletes.org/media/content/test/1e56cbf7-a17d-4736-8b66-a2d80049791f.NEF'
 
 /*let t = new Uint8Array([10, 20, 30, 40, 50])
 var buffer = new ArrayBuffer(8) //)

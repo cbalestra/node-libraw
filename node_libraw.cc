@@ -102,12 +102,15 @@ namespace node_libraw {
 		v8::Local<v8::String> widthProp = Nan::New("width").ToLocalChecked();
 		v8::Local<v8::String> heightProp = Nan::New("height").ToLocalChecked();
 		v8::Local<v8::String> sizeProp = Nan::New("size").ToLocalChecked();
+		v8::Local<v8::String> flipProp = Nan::New("flip").ToLocalChecked();
 		v8::Local<v8::Value> widthValue = Nan::New(RawProcessor.imgdata.thumbnail.twidth);
 		v8::Local<v8::Value> heightValue = Nan::New(RawProcessor.imgdata.thumbnail.theight);
 		v8::Local<v8::Value> sizeValue = Nan::New(RawProcessor.imgdata.thumbnail.tlength);
+		v8::Local<v8::Value> flipValue = Nan::New(RawProcessor.imgdata.sizes.flip);
 		Nan::Set(jsonObject, widthProp, widthValue);
 		Nan::Set(jsonObject, heightProp, heightValue);
 		Nan::Set(jsonObject, sizeProp, sizeValue);
+		Nan::Set(jsonObject, flipProp, flipValue);
 
 		v8::Local<v8::String> dataProp = Nan::New("data").ToLocalChecked();
 		//v8::Local<v8::Buffer> dataValue =
