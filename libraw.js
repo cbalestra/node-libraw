@@ -35,7 +35,17 @@ const libraw = {
           });
       });
     });
-  }
+  },
+
+	extractFromMemory: function(input, output) {
+		return new Promise(function(resolve, reject) {
+			raw.extractFromMemory(input, output, function(err, output) {
+				resolve(output);
+			})
+		});
+	},
+
+
 };
 
 module.exports = libraw;
